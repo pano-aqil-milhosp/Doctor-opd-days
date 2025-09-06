@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Doctor Schedule - Hospital Management</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-hospital-user"></i></div>
+                    <h1>Comprehensive Doctor Schedule</h1>
+                </div>
+            </div>
+            <div class="subtitle">Current week: September 1 - September 7, 2025</div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name or specialty...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <main class="table-container">
+            <div class="scroll-hint">Scroll table for more details →</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Specialty</th>
+                        <th>Status</th>
+                        <th>OPD Day</th>
+                        <th>OP Day</th>
+                        <th>Procedure</th>
+                        <th>Vaccination</th>
+                        <th>ETT</th>
+                        <th>EEG</th>
+                        <th>ECT</th>
+                        <th>Cataract</th>
+                        <th>Contact (PA)</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">SM</div><div><span class="doctor-name">Dr. Shazia Mahmood Awan</span><span class="doctor-specialty"><br>Gynaecology</span></div></div>
+                        </td>
+                        <td>gynaecologist</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue, Thu</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wen, Fri</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">0321-6642312</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">SN</div><div><span class="doctor-name">Dr. Sofia Naz</span><span class="doctor-specialty"><br>Gynaecology</span></div></div>
+                        </td>
+                        <td>gynaecologist</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue, Thu</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wed, Fri</span></td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">0321-6642312</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <div class="doctor-cell"><div class="doctor-avatar">SS</div><div><span class="doctor-name">Dr. Samina Sultana</span><span class="doctor-specialty"><br>PEADS - Specialist</span></div></div>
+                        </td>
+                        <td>PEADS - Specialist</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon to Fri</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Thu</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">0300-3442167</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">HA</div><div><span class="doctor-name">Dr. Haroon Akbar</span><span class="doctor-specialty"><br>G. Surgery</span></div></div>
+                        </td>
+                        <td>General Surgery</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon & Wed</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue & Thu</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Fri</td>
+                        <td class="day-cell"><span class="day-tag">0300-9735990</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">MK</div><div><span class="doctor-name">Dr. Kamran </span><span class="doctor-specialty"><br>G. Surgery
+</span></div></div>
+                        </td>
+                        <td>General Surgery	</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wen</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue, Thu</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Fri</span></td>
+                        <td class="day-cell"><span class="day-tag">0300-9735990</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">AQ</div><div><span class="doctor-name">Dr. Adeel Qamar Ghumman</span><span class="doctor-specialty"><br> Ortho</span></div></div>
+                        </td>
+                        <td>Ortho</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wen</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue & Thu</span></td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Fri</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">RK</div><div><span class="doctor-name">Dr. Rehana Kausar</span><span class="doctor-specialty"><br>General - Medicine</span></div></div>
+                        </td>
+                        <td>General - Medicine</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wed, Fri</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Tue</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell"><span class="day-tag">Thu</td>
+                        <td class="day-cell"><span class="day-tag">0300-8193884</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">SR</div><div><span class="doctor-name">Dr. Sidra Raiz</span><span class="doctor-specialty"><br>General - Medicine</span></div></div>
+                        </td>
+                        <td>General - Medicine</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wed, Fri</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Tue</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell"><span class="day-tag">Thu</td>
+                        <td class="day-cell"><span class="day-tag">0305-5894713</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">RR</div><div><span class="doctor-name">Dr. Raja Rizwan Ul Haq Satti</span><span class="doctor-specialty"><br>General - Medicine
+</span></div></div>
+                        </td>
+                        <td>General - Medicine</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wed, Fri</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">IJ</div><div><span class="doctor-name">Dr. Ismat Jabin</span><span class="doctor-specialty"><br>Dermatology</span></div></div>
+                        </td>
+                        <td>Dermatology</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue, Thu, Fri</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wen</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Mon</td>
+                        <td class="day-cell"><span class="day-tag">0340-4571332</td>
+                        <td>8:00 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">SI</div><div><span class="doctor-name">Dr. Samra Iram</span><span class="doctor-specialty"><br>Dermatology</span></div></div>
+                        </td>
+                        <td>Dermatology</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue, Thu, Fri</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon, Wen</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Mon</td>
+                        <td class="day-cell"><span class="day-tag">0311-6923552</td>
+                        <td>8:00 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">WS</div><div><span class="doctor-name">Dr. Muhmmad Wasif Siddique</span><span class="doctor-specialty"><br>ENT</span></div></div>
+                        </td>
+                        <td>ENT</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue & Thu</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon & Wen</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Fri</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">OI</div><div><span class="doctor-name">Dr. Omar Istiaq </span><span class="doctor-specialty">Ophthomology - (Eye)</span></div></div>
+                        </td>
+                        <td>Ophthomology</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell"><span class="day-tag">Tue & Thu</span></td>
+                        <td class="day-cell"><span class="day-tag">Mon & Wen</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">Fri</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">OS</div><div><span class="doctor-name">Dr. Omar Shafiq</span><span class="doctor-specialty"><br>Rehab</span></div></div>
+                        </td>
+                        <td>Rehab - Department</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td>8:30 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="doctor-cell"><div class="doctor-avatar">MS</div><div><span class="doctor-name">Dr. Muhammad Siddique Kakar</span><span class="doctor-specialty"><br>Psychiatry</span></div></div>
+                        </td>
+                        <td>Psychiatry</td>
+                        <td><span class="status-badge available">Available</span></td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</span></td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell not-applicable">N/A</td>
+                        <td class="day-cell"><span class="day-tag">0308-8753130</td>
+                        <td>8:30 PM - 3:00 PM</td>
+                    </tr>
+                    
+                   
+                </tbody>
+            </table>
+        </main>
+        
+        <footer>
+            <p>Website designed and developed by <span class="credit-name">Muhammad Asim</span> | © 2025. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
